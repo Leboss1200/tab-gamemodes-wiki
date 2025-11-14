@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tab Gamemodes — Wiki</title>
+  <link rel="icon" type="image/png" href="https://media.forgecdn.net/avatars/thumbnails/1515/287/64/64/638983998908429259.png" style="border-radius:50%">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg-1: #08140a;
+      --bg-2: rgba(255,255,255,0.04);
+      --glass: rgba(255,255,255,0.06);
+      --accent: #6fe07a;
+      --muted: #bfecc3;
+      --card-radius: 14px;
+      --max-w: 980px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100vh;background:linear-gradient(180deg,var(--bg-1) 0%, #0b2a14 100%);color:var(--muted);font-family:Inter, Arial, sans-serif;display:flex;align-items:center;justify-content:center;padding:36px}
+
+    .site{width:100%;max-width:var(--max-w)}
+    .header{display:flex;align-items:center;gap:18px;background:linear-gradient(180deg,var(--glass), rgba(255,255,255,0.02));padding:18px;border-radius:var(--card-radius);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.04)}
+
+    .logo{width:84px;height:84px;border-radius:50%;flex:0 0 84px;background-image:url('https://media.forgecdn.net/avatars/thumbnails/1515/287/64/64/638983998908429259.png');background-size:cover;background-position:center;border:1px solid rgba(255,255,255,0.06);box-shadow:0 6px 18px rgba(3,10,4,0.6)}
+
+    .title-wrap{flex:1}
+    .title{font-weight:800;color:var(--accent);font-size:20px;letter-spacing:1px}
+    .subtitle{font-size:13px;color:var(--muted);margin-top:6px}
+
+    .controls{display:flex;gap:10px;align-items:center}
+    .lang-btn{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:10px;background:transparent;border:1px solid rgba(255,255,255,0.04);cursor:pointer;color:var(--muted);font-weight:700}
+
+    .main{margin-top:20px;display:grid;grid-template-columns:1fr 360px;gap:20px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    h2{margin:0 0 10px 0;color:var(--accent);font-weight:800;font-size:14px}
+    p,li{color:var(--muted);line-height:1.5;margin:0 0 10px 0}
+
+    .download{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:#012003;font-weight:800;text-decoration:none;margin-right:6px}
+
+    .card:hover{transform:translateY(-4px);transition:transform .18s ease}
+
+    @media(max-width:900px){.main{grid-template-columns:1fr}body{padding:20px}}
+  </style>
+</head>
+<body>
+  <div class="site">
+    <header class="header">
+      <div class="logo" aria-hidden="true"></div>
+      <div class="title-wrap">
+        <div class="title">TAB Gamemodes</div>
+        <div class="subtitle">Mod Minecraft — Fabric 1.21 → 1.21.4</div>
+      </div>
+      <div class="controls">
+        <button id="langBtn" class="lang-btn">FR</button>
+        <a href="https://www.curseforge.com/minecraft/mc-mods/tab-gamemodes" class="download">Download Mod</a>
+        <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api" class="download">Download Fabric API</a>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="card" id="content">
+        <h2 data-en="About" data-fr="À propos">À propos</h2>
+        <p data-en="Have you ever suspected that your friends are sneaking into Creative mode on your SMP? Or maybe you want to expose a shady server admin? Then this mod is exactly what you need!" data-fr="As-tu déjà soupçonné tes amis de passer en mode Créatif sur ton SMP ? Ou voulu exposer un admin louche ? Alors ce mod est fait pour toi !">As-tu déjà soupçonné tes amis de passer en mode Créatif sur ton SMP ? Ou voulu exposer un admin louche ? Alors ce mod est fait pour toi !</p>
+        <p data-en="Introducing: TAB Gamemodes! Created by Leboss1200." data-fr="Présentation : TAB Gamemodes ! Créé par Leboss1200."><strong>Présentation : TAB Gamemodes ! Créé par Leboss1200.</strong></p>
+        <p data-en="With this mod, you can instantly see every player’s gamemode directly in the tab list." data-fr="Ce mod te permet de voir instantanément le gamemode de chaque joueur directement dans la TAB.">Ce mod te permet de voir instantanément le gamemode de chaque joueur directement dans la TAB.</p>
+        <h2>Installation</h2>
+        <ul>
+          <li>Installe Fabric Loader pour Minecraft 1.21–1.21.4</li>
+          <li>Télécharge Fabric API</li>
+          <li>Place le fichier .jar du mod dans ton dossier mods</li>
+          <li>Lance Minecraft avec le profil Fabric</li>
+        </ul>
+        <h2>Fonctionnement</h2>
+        <p>Le mod affiche des balises de gamemode dans la TAB :</p>
+        <ul>
+          <li>[S] — Survie</li>
+          <li>[C] — Créatif</li>
+          <li>[A] — Aventure</li>
+          <li>[Sp] — Spectateur</li>
+        </ul>
+        <h2>Limitations</h2>
+        <p>Fonctionne uniquement avec Fabric</p>
+        <h2>Crédits</h2>
+        <p>Créé par Leboss1200.</p>
+      </section>
+
+      <aside class="card" id="quickInfo">
+        <h2 data-en="Quick info" data-fr="Infos rapides">Quick info</h2>
+        <p><strong data-en="Version:" data-fr="Version:">Version:</strong> Fabric — Minecraft 1.21 → 1.21.4</p>
+        <p><strong data-en="Hotkey:" data-fr="Raccourci:">Hotkey:</strong> Middle mouse (change in Controls)</p>
+        <p><strong data-en="License:" data-fr="Licence:">License:</strong> Check mod page</p>
+      </aside>
+    </main>
+  </div>
+
+<script>
+  const langBtn = document.getElementById('langBtn');
+  const content = document.getElementById('content');
+  const quickInfo = document.getElementById('quickInfo');
+  let lang = 'en';
+
+  function render(){
+    content.querySelectorAll('[data-en]').forEach(el=>{
+      el.textContent = (lang==='en') ? el.getAttribute('data-en') : el.getAttribute('data-fr');
+    });
+
+    quickInfo.querySelectorAll('[data-en]').forEach(el=>{
+      el.textContent = (lang==='en') ? el.getAttribute('data-en') : el.getAttribute('data-fr');
+    });
+
+    langBtn.textContent = (lang === 'en') ? 'FR' : 'EN';
+  }
+
+  langBtn.addEventListener('click', ()=>{ lang = (lang === 'en') ? 'fr' : 'en'; render(); });
+  render();
+</script>
+</body>
+</html>
